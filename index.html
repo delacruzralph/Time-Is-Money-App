@@ -20,16 +20,16 @@
     </div>
     <form>
       <label for="currency">Currency</label>
-      <select name="currency" id="currency">
+      <select name="currency" id="currency" onchange="handleChange(event)">
         <option value="USD">$ USD</option>
         <option value="EUR">€ EUR</option>
         <option value="JPY">¥ JPY</option>
         <option value="GBP">£ GBP</option>
       </select>
       <label for="pay-rate">Pay Rate</label>
-      <input type="text" id="pay-rate" />
+      <input type="text" id="pay-rate" value="0" oninput="handleChange(event)"/>
       <label for="per">per</label>
-      <select name="per" id="per">
+      <select name="per" id="per" onchange="handleChange(event)">
         <option value="hour">hour</option>
         <option value="day">day</option>
         <option value="week">week</option>
@@ -39,7 +39,7 @@
       </select>
     </form>
     <div id="btn-group">
-      <button id="start-btn">Start</button>
+      <button id="start-btn" onclick="startCounter()">Start</button>
       <button id="stop-btn">Stop</button>
     </div>
 
