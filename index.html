@@ -7,8 +7,33 @@
   <title>Time is Money</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  
+<body> 
+  <h1>Time is Money</h1>
+  <div><p>$0.00</p></div>
+  <div><p>00:00:00</p></div>
+  <form>
+    <label for="currency">Currency</label>
+    <select name="currency" id="currency">
+      <option value="USD">$ USD</option>
+      <option value="EUR">€ EUR</option>
+      <option value="JPY">¥ JPY</option>
+      <option value="GBP">£ GBP</option>
+    </select>
+    <label for="pay-rate">Pay Rate</label>
+    <input type="text" id="pay-rate"/>
+    <label for="per">per</label>
+    <select name="per" id="per">
+      <option value="hour">hour</option>
+      <option value="day">day</option>
+      <option value="week">week</option>
+      <option value="biweekly">2 weeks</option>
+      <option value="month">month</option>
+      <option value="year">year</option>
+    </select>
+  </form>
+  <button>Start</button>
+  <button>Stop</button>
+
   <script src="app.js"></script>
 </body>
 </html>
