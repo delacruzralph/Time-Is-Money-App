@@ -1,9 +1,10 @@
+// Model
+
 let currency = document.getElementById('currency').value;
 let payRate = document.getElementById('pay-rate').value;
 let perUnit = document.getElementById('per').value;
-console.log(currency);
-console.log(payRate);
-console.log(perUnit);
+
+// Controller
 
 function handleChange(e) {
   let value = e.target.value;
@@ -30,3 +31,5 @@ function startCounter() {
   console.log(currency, payRate, perUnit);
   console.log("Start");
 }
+
+// View
