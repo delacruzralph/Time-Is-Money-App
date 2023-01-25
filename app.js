@@ -58,7 +58,7 @@ function startCounter() {
   console.log(currency, payRate, perUnit);
   console.log("Start");
   startTimer();
-  renderTimer()
+  renderTimer();
 }
 
 function stopCounter() {
