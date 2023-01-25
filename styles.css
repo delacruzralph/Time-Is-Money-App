@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ============
+      STYLES
+   ============ */
+
+body {
+  max-width: 32rem;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#pay-earned, #time-worked  {
+  background-color: gray;
+  padding: 1.5rem;
+  font-size: 4rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+
+#time-worked {
+  font-size: 2rem;
+}
+
+label {
+  margin-block: 0.5rem;
+  display: block;
+}
+
+label[for="per"] {
+  margin: 0;
+  display: inline;
+}
+
+select, input {
+  border: none;
+  background-color: gray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+#pay-rate {
+  width: 50%;
+}
+
+#btn-group {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: gray;
+  border: none;
+  border-radius: 5rem;
+  padding-block: 1rem;
+  width: 45%;
+}
