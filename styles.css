@@ -109,6 +109,10 @@ select, input {
   width: 50%;
 }
 
+#per-hour {
+  display: inline;
+}
+
 #btn-group {
   margin-top: 1.5rem;
   display: flex;

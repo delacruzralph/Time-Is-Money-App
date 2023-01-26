@@ -13,7 +13,7 @@
   <main>
     <h1>Time is Money</h1>
     <div id="pay-earned">
-      <p>$0.00</p>
+      <p id="pay-text">$0.00</p>
     </div>
     <div id="time-worked">
       <p id="time-text">00:00:00</p>
@@ -28,15 +28,7 @@
       </select>
       <label for="pay-rate">Pay Rate</label>
       <input type="text" id="pay-rate" value="0" oninput="handleChange(event)"/>
-      <label for="per">per</label>
-      <select name="per" id="per" onchange="handleChange(event)">
-        <option value="hour">hour</option>
-        <option value="day">day</option>
-        <option value="week">week</option>
-        <option value="biweekly">2 weeks</option>
-        <option value="month">month</option>
-        <option value="year">year</option>
-      </select>
+      <p id="per-hour">per hour</p>
     </form>
     <div id="btn-group">
       <button id="start-btn" onclick="startCounter()">Start</button>
