@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -64,24 +63,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding: 2rem;
   margin: auto;
+  background-color: #C5E6A6;
 }
 
 h1 {
   font-size: 2.5rem;
   margin: auto;
   text-align: center;
+  color: #313628;
 }
 
 p {
   text-align: center;
 }
 
-#pay-earned, #time-worked  {
-  background-color: lightgray;
+#pay-earned,
+#time-worked {
+  background-color: #5C8001;
   padding: 1.5rem;
   font-size: 4rem;
   margin: 2rem auto;
   border-radius: 1rem;
+  color: #C5E6A6;
 }
 
 #time-worked {
@@ -90,26 +93,25 @@ p {
 
 label {
   margin-block: 0.5rem;
+  color: #313628;
   display: block;
 }
 
-label[for="per"] {
-  margin: 0;
-  display: inline;
-}
-
-select, input {
-  border: none;
-  background-color: lightgray;
+select,
+input {
+  border: #5C8001 2px solid;
+  background-color: transparent;
   border-radius: 0.5rem;
+  color: #313628;
   padding: 0.5rem;
 }
 
 #pay-rate {
-  width: 50%;
+  width: 25%;
 }
 
 #per-hour {
+  color: #313628;
   display: inline;
 }
 
@@ -126,7 +128,18 @@ button {
   padding-block: 1rem;
   width: 45%;
   transition: opacity 0.15s;
+  color: #313628;
   cursor: pointer;
+}
+
+#start-btn {
+  background-color: #5C8001;
+  color: #C5E6A6;
+}
+
+#stop-btn {
+  background-color: #C5E6A6;
+  border: #5C8001 solid 1px;
 }
 
 button:hover {
