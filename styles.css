@@ -127,9 +127,9 @@ button {
   border-radius: 5rem;
   padding-block: 1rem;
   width: 45%;
-  transition: opacity 0.15s;
   color: #313628;
   cursor: pointer;
+  transition: background-color .15s;
 }
 
 #start-btn {
@@ -137,11 +137,16 @@ button {
   color: #C5E6A6;
 }
 
+#start-btn:hover {
+  background-color: #313628;
+}
+
 #stop-btn {
   background-color: #C5E6A6;
   border: #5C8001 solid 1px;
 }
 
-button:hover {
-  opacity: 0.8;
+#stop-btn:hover{
+  background-color: #313628;
+  color: #C5E6A6;
 }
