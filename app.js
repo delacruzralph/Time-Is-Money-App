@@ -63,6 +63,7 @@ function startPayCounter() {
 
 function startCounter() {
   document.getElementById('pay-rate').disabled = true;
+  document.getElementById('start-btn').disabled = true;
   startTimer();
   renderTimer();
   startPayCounter();
@@ -70,7 +71,8 @@ function startCounter() {
 }
 
 function stopCounter() {
-  document.getElementById('pay-rate').disabled = false;
+  document.getElementById('pay-rate').disabled = false; 
+  document.getElementById('start-btn').disabled = false;
   clearInterval(timerIntervalId);
   clearInterval(counterIntervalId);
   payEarned = parseFloat(0).toFixed(2);
