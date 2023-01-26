@@ -1,10 +1,3 @@
-/* TODO
-  - Wage Counter
-  - Pause Counter
-  - Stop Counter
-*/
-
-
 // Model
 
 let currency = document.getElementById('currency').value;
